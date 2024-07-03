@@ -32,7 +32,7 @@ app.post("/", async (req, res) => {
     );
     const result = response.data;
     console.log(result);
-    res.render("solution.ejs", {
+    res.render("index.ejs", {
       data: result[Math.floor(Math.random() * result.length)],
     });
   } catch (error) {
